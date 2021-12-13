@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'community.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'communitydb',
+        'USER': 'good',
+        'PASSWORD': 'love091',
         'HOST': 'localhost',
         'PORT': '5432',
     }

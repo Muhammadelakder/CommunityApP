@@ -1,6 +1,6 @@
 # Community
 > منصه للتوصيل التشاركي  
-
+[![Screenshot-from-2021-12-13-15-18-28.png](https://i.postimg.cc/PrVcrC9n/Screenshot-from-2021-12-13-15-18-28.png)](https://postimg.cc/MvRt9pz9)
 
 ## متطلبات عمل التطبيق
 
@@ -16,6 +16,8 @@
     - `sudo apt-get install libpq-dev python-dev`
     - `sudo apt-get install binutils libproj-dev gdal-bin`
 
+    >NOTE : Try [WSL](https://ubuntu.com/wsl).
+
 4. **Django and other dependencies**
     `pip install -r requirements.text`
 
@@ -25,7 +27,7 @@
     >Create Postgresql Database &
     >add it to Django project.
 
-2. **create api key on [mapbox](https://mapbox.com/) and add it maps.js**
+2. **Create api key on [mapbox](https://mapbox.com/)**
     >open /home/modules/map.js &
     >add the access token.
 
@@ -43,3 +45,4 @@
 
 
 # ساهم في المشروع
+    
