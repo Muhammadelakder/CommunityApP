@@ -22,13 +22,17 @@
 ## كيفية البدء
 
 1. **انشاء قاعدة بيانات**
-    
+    >Create Postgresql Database &
+    >add it to Django project.
 
-2. **create api in mapbox and add it maps.js**
-    
+2. **create api key on [mapbox](https://mapbox.com/) and add it maps.js**
+    >open /home/modules/map.js &
+    >add the access token.
 
 3. **واخيرا شغل الاوامر التاليه**
+
     `python manage.py makemigrations stores`
+
     `python manage.py runserver`
 
 
@@ -38,4 +42,4 @@
     (https://egen.solutions/articles/thinking-of-building-a-contact-tracing-application-what-to-do-instead/).
 
 
-# ساهم في المشروع?
+# ساهم في المشروع

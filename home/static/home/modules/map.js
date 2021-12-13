@@ -2,7 +2,7 @@ import {
     updateSelectedStore,
 } from './stores.js';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibXVoYW1tYWRlbGFrZGVyIiwiYSI6ImNreDM4aGY0NTA2bXYybnAwcnZ5eTc2Y3IifQ.iS_F4DUqwDNGYFOuin46Xg';
+mapboxgl.accessToken = 'add access token here';
 
 /**
  * @typedef {import('./api').Store} Store
@@ -86,6 +86,7 @@ export function convertToGeoJson(stores) {return {
  * @param {StoresGeoJSON} storesGeoJson
  */
 export function plotStoresOnMap(map, storesGeoJson) {
+
 
     for(let store of storesGeoJson.features) { 
 
