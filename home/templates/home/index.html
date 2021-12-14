@@ -2,26 +2,30 @@
 <html lang="ar">
     <head>
         <meta charset="utf-8">
+
         <title>توصيل تشاركى</title>
 
         <meta name="viewport" content="initial-scale=1, width=device-width">
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-        <link
-            rel="stylesheet" type="text/css"
-            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"   
-        />
+        <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"/>
 
         {% load static %}
-            <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheets/index.css' %}" media="screen"/>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'home/stylesheets/index.css' %}" media="screen"/>
 
         <meta name="description" content="منصة توصيل تشاركيه!" />
         <meta
             name="keywords"
-            content="kartpool, community-driven, delivery-platform, egen, ashwin hariharan, projects, open source, tutorial"
+            content="community-driven, delivery-platform, egen, ashwin hariharan, projects, open source, tutorial"
         >
+
     </head>
+
+
     <body data-username={{ username }}>
+
         <header class="flex-container">
             <div class="flex-item">
                 <h1 id="logo">
@@ -35,6 +39,7 @@
         </header>
 
         <main class="flex-container">
+
             <section class="flex-item">
                 <h1>
                     قوائم احتياجاتك
@@ -105,10 +110,13 @@
         <script type="text/javascript" src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
 
         {% load static %}
-            <script type="module" src="{% static 'home/modules/index.js' %}"></script>
+
+        <script type="module" src="{% static 'home/modules/index.js' %}"></script>
 
         <noscript>
             This application requires JavaScript to be enabled
         </noscript>
+
     </body>
+    
 </html>

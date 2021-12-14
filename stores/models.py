@@ -4,6 +4,8 @@ from django.contrib.gis.geos import Point
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
+
+# انشاء نموذج لتخزين بيانات المتاجر
 class Store(models.Model):
     id = models.CharField(primary_key=True, max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)

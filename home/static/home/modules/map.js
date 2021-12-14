@@ -27,6 +27,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibXVoYW1tYWRlbGFrZGVyIiwiYSI6ImNreDM4aGY0NTA2b
  * Create a new mapbox map instance
  * @return {Object} Map
  */
+
+// تعريف وظيفه لتمرير الخريطه للصفحه الرئيسيه
 export function addMap() {
     const map = new mapboxgl.Map({  
         container: 'map',  
@@ -45,6 +47,8 @@ export function addMap() {
  * @param {Object} map
  * @param {function} geocoderCallback - The callback that handles the response.
  */
+
+// تعريف وظيفه للتحكم بالخريطه
 export function addGeocoder(map, geocoderCallback) {
     const geocoder = new MapboxGeocoder({ accessToken: mapboxgl.accessToken, mapboxgl: mapboxgl });map.addControl(geocoder);geocoder.on("result", (data) => {  
         geocoderCallback(data);  
@@ -58,6 +62,7 @@ export function addGeocoder(map, geocoderCallback) {
  * @return {StoresGeoJSON} Stores in GeoJSON
  */
 
+// تحويل قائمة المتاجر الى صيغة (جاسون)
 export function convertToGeoJson(stores) {return {  
     type: "FeatureCollection",  
     features: stores.map(store => {  
@@ -85,6 +90,8 @@ export function convertToGeoJson(stores) {return {
  * @param {Object} map
  * @param {StoresGeoJSON} storesGeoJson
  */
+
+// تعريف وظيفه لإضافة المتاجر القريبه من المسخدم للخريطه
 export function plotStoresOnMap(map, storesGeoJson) {
 
 

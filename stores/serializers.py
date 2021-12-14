@@ -2,6 +2,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from .models import Store
 
+# انشاء صنف لتصفية بيانات معينه على المتاجر وتمريرها (للعروض)
 class NearbyStoreSerializer(serializers.ModelSerializer):
 
     distance = serializers.SerializerMethodField()

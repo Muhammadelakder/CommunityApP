@@ -6,6 +6,8 @@ from rest_framework.response import Response
 from rest_framework.renderers import TemplateHTMLRenderer
 
 # Create your views here.
+
+# انشاء صنف لإظهار قالب الإندكس للصفحه الرئيسيه
 class HomePage(viewsets.GenericViewSet):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'home/index.html' 

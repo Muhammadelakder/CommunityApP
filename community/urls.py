@@ -27,8 +27,10 @@ router = DefaultRouter()
 
 stores_viewsrouter = DefaultRouter() 
 
+# Add path for storeview function
 router.register(r'stores',stores_views.StoreView,basename='stores')
 
+# Creating a path for HomePage function
 router.register(r'home', home_views.HomePage, basename='home')
 
 urlpatterns = [
