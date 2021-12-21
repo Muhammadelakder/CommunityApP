@@ -9,7 +9,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 class Store(models.Model):
     id = models.CharField(primary_key=True, max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=110)
+    name = models.CharField(max_length=100)
     rating = models.FloatField(null=True, validators=[MinValueValidator(0.0), MaxValueValidator(5.0)])
     store_type = models.CharField(null=True, max_length=50)
     opening_hour = models.TimeField(null=True)
