@@ -125,7 +125,13 @@ export function plotStoresOnMap(map, storesGeoJson) {
  * @param {StoreFeatureObject} point
  */
 export function flyToStore(map, point) {
+    
+    map.flyTo({
 
+        center: point.geometry.coordinates,
+        zoom: 20
+        
+    })
 }
 
 /**
@@ -133,6 +139,36 @@ export function flyToStore(map, point) {
  * @param {Object} map
  * @param {StoreFeatureObject} point
  */
-export function displayStoreDetails(map, point) {
+ export function displayStoreDetails(map, point) {  
+
+    const popUps = document.getElementsByClassName('mapboxgl-popup');  
     
+    if (popUps[0]){  
+        popUps[0].remove();  
+    } 
+    
+    const popup = new mapboxgl.Popup({ closeOnClick: false })  
+        .setLngLat(point.geometry.coordinates)  
+        .setHTML(`  
+            <details>  
+                <summary><h2>${point.properties.name}</h2></summary>  
+                <dl>  
+                    <dt>Distance</dt>  
+                    <dd>Approximately <strong>${point.properties.distance.toFixed(2)} km</strong> away</dd>
+                    
+                    <dt>Address</dt>  
+                    <dd>${point.properties.address || 'N/A'}</dd>
+                    
+                    <dt>Phone</dt>  
+                    <dd>${point.properties.phone || 'N/A'}</dd>
+                    
+                    <dt>Rating</dt>  
+                    <dd>${point.properties.rating || 'N/A'}</dd>  
+                </dl>  
+            </details>  
+        `)  
+        .addTo(map);  
+    
+    return popup;  
 }
+

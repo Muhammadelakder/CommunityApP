@@ -19,19 +19,23 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 from stores import views as stores_views
 
-from stores import views as stores_viewsrouter 
+from stores import views as stores_views 
 
 from home import views as home_views 
 
-router = DefaultRouter()
+from wishlists import views as wishlists_views 
 
-stores_viewsrouter = DefaultRouter() 
+
+router = DefaultRouter()
+ 
 
 # Add path for storeview function
 router.register(r'stores',stores_views.StoreView,basename='stores')
 
 # Creating a path for HomePage function
 router.register(r'home', home_views.HomePage, basename='home')
+
+router.register(r'wishlists', wishlists_views.WishlistView, basename='wishlists')
 
 urlpatterns = [
     path('', include(router.urls)),

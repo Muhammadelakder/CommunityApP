@@ -6,7 +6,7 @@ from django.contrib.gis.geos import fromstr
 from pathlib import Path
 
 DATA_FILENAME = 'data/data.json'
-CITY = 'Tripoli'
+CITY = 'Libya'
 
 def load_data(apps, schema_editor):
     Store = apps.get_model('stores', 'Store')

@@ -98,6 +98,7 @@ export async function addWishlist(buyer, items, store) {
 
     if (response.ok) {
         return response.json();
+        document.querySelector('#wishlist-items').innerHTML = "";
     } else {
         return Promise.reject(Error(response.statusText));
     }

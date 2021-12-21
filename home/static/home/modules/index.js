@@ -33,3 +33,15 @@ let geocoder = addGeocoder(MAP, (data) => {
     });
   
 });
+
+document.getElementById("add-wishlist").onclick =  function(e) {
+    createWishlist();
+}
+
+// add event listener to the wishlists
+const wishlists = document.getElementsByClassName('wishlists');
+
+for (let i = 0; i < wishlists.length; i++)
+{
+    wishlists[i].addEventListener('click', updateWishlistStatus);
+}
