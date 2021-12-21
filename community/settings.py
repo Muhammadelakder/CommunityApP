@@ -16,9 +16,13 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+GDAL=$(pwd)/vendor
+export GDAL
+
+
 # import gdal library
-GDAL_LIBRARY_PATH = os.getenv('/app/.apt/usr/bin/ogr2ogr/.heroku/vendor/lib/libgdal.so')
-GEOS_LIBRARY_PATH = os.getenv('/app/.apt/usr/bin/ogr2ogr/.heroku/vendor/lib/libgeos_c.so')
+export GDAL_LIBRARY_PATH = os.getenv('/app/.apt/usr/bin/ogr2ogr/.heroku/vendor/lib/libgdal.so')
+export GEOS_LIBRARY_PATH = os.getenv('/app/.apt/usr/bin/ogr2ogr/.heroku/vendor/lib/libgeos_c.so')
 
 
 # Quick-start development settings - unsuitable for production
