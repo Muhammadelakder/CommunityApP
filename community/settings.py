@@ -94,16 +94,17 @@ WSGI_APPLICATION = 'community.wsgi.application'
  #   }
 
 
-#DATABASES = {
- #   'default': {
-  #      'ENGINE': 'django.contrib.gis.db.backends.postgis',
-   #    'NAME': 'communitydb',
-    #    'USER': 'good',
-     #   'PASSWORD': 'love091',
-      #  'HOST': 'localhost',
-       # 'PORT': '5432',
- #   }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+       'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
 
 
 db_from_env = dj_database_url.config(conn_max_age=600)
