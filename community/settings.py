@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
-import os
 import django_heroku
 import dj_database_url
 
@@ -104,6 +103,7 @@ DATABASES = {
     }
 }
 
+django_heroku.settings(locals())
 
 DATABASES['default'] = dj_database_url.config(conn_max_age=500)
 DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
@@ -148,7 +148,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = "/static/"
 
-django_heroku.settings(locals())
+
 
 
 
@@ -157,3 +157,4 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# django_heroku.settings(locals())
