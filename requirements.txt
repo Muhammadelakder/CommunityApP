@@ -1,4 +1,7 @@
-django
+Django
+psycopg2
+djangorestframework
+django-environ
 gunicorn
 django-heroku
 requests
