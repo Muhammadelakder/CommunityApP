@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qg!_ni0#0+eh$=tq23&xowvbv%$8%@@dy7ddxmjb0ct&=zfkgk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -96,11 +96,11 @@ WSGI_APPLICATION = 'community.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'gis',
-        'USER': 'user001',
-        'PASSWORD': '123456789',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': ''
     }
 }
 
