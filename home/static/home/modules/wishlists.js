@@ -85,8 +85,10 @@ export async function createWishlist() {
     if (USERNAME && SELECTED_STORE_ID && wishlistInput){
 
         addWishlist(USERNAME, wishlistInput.split(","), SELECTED_STORE_ID);
+	document.querySelector('#wishlist-items').value = "";
 
     }
+	
 }
 
 /**
