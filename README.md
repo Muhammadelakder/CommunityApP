@@ -6,7 +6,7 @@
 
 **`https://listforhsop.herokuapp.com/login` جرب التطبيق**
 
->[جرب التطبيق علي الهاتف](https://github.com/Muhammadelakder/CommunityApP/raw/main/deliverybycommunity.herokuapp.apk)
+>[جرب التطبيق علي الهاتف](https://github.com/Muhammadelakder/CommunityApP/raw/main/deliverybycommunity.apk)
 
 
 ## متطلبات عمل التطبيق
