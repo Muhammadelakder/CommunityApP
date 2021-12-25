@@ -2,6 +2,13 @@
 > منصه للتوصيل التشاركي   مجانيه
 [![Screenshot-from-2021-12-13-15-18-28.png](https://i.postimg.cc/PrVcrC9n/Screenshot-from-2021-12-13-15-18-28.png)](https://postimg.cc/MvRt9pz9)
 
+>[جرب التطبيق علي الويب](/https://deliverybycommunity.herokuapp.com/home)
+
+**`https://listforhsop.herokuapp.com/login` جرب التطبيق**
+
+>[جرب التطبيق علي الهاتف](https://github.com/Muhammadelakder/grocerylist/raw/main/grocerylist.apk)
+
+
 ## متطلبات عمل التطبيق
 
 1. **PostgreSQL and PostGIS**
