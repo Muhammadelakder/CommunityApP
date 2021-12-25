@@ -1,0 +1,19 @@
+{
+  "background_color": "#ffffff",
+  "description": "منصة توصيل تشاركيه!",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "deliverybycommunity.herokuapp",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "deliverybycommunity.herokuapp",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+	"icons": [
+		{
+		    "src": "icons/icon-512x512.png",
+		    "sizes": "512x512",
+		    "type": "image/png"
+		}
+	]
+}
