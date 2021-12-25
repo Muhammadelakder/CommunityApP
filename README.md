@@ -19,7 +19,7 @@
     >NOTE : Try [WSL](https://ubuntu.com/wsl).
 
 4. **Django and other dependencies**
-    `pip install -r requirements.text`
+    `pip install -r requirements.txt`
 
 ## كيفية البدء
 
