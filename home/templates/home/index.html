@@ -83,6 +83,8 @@
                 <hr>
 
                 <section aria-label="الطلبيات">
+		<form method="post">
+        		{% csrf_token %}
                     <input
                         id="wishlist-items"
                         placeholder="اختر متجرك المفضل ثم اكتب ماتريده واضف وسيلة اتصال خاصه بك"
@@ -91,6 +93,7 @@
                     <button id="add-wishlist">
                         اضافة طلبيه
                     </button>
+		</form>
                 </section>
                 
             </section>
