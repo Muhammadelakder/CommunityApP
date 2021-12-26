@@ -2,7 +2,7 @@
 > منصه للتوصيل التشاركي   مجانيه
 [![Screenshot-from-2021-12-13-15-18-28.png](https://i.postimg.cc/PrVcrC9n/Screenshot-from-2021-12-13-15-18-28.png)](https://postimg.cc/MvRt9pz9)
 
->[جرب التطبيق علي الويب](/https://deliverybycommunity.herokuapp.com/home)
+>[جرب التطبيق علي الويب](https://deliverybycommunity.herokuapp.com/home)
 
 **`https://listforhsop.herokuapp.com/login` جرب التطبيق**
 
